@@ -13,9 +13,7 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    border:2px solid #a363aa;
-    border-radius: 15px;
+    justify-content:space-evenly;
 }
 
 .content-left{
@@ -23,6 +21,7 @@ body{
     flex-direction: column;
     align-items: start;
     gap:20px;
+
 }
 
 .content-left-title h2{
@@ -58,6 +57,59 @@ body{
     border-radius: 20px;
 }
 
+.content-inputs:focus{
+    border: 2px, solid, #ff994f;
+}
+
+.content-inputs::placeholder{
+    color: #a9a9a9;
+}
+
 .content-left button{
-    width: ;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    padding-left:70px;
+    font-size:16px;
+    color: #fff;
+    gap: 10px;
+    border:none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+}
+
+.map iframe{
+    width: 500px;
+    border-radius: 15px;
+}
+
+@media (max-width:400px){
+    .content{
+        margin-top: 25px;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .content-inputs{
+        width: 370px;
+    }
+
+    .contact-inputs{
+        width: 60vw;
+    }
+
+    .map iframe{
+        margin-top: 10px;
+        width: 410px;
+        border-radius: 15px;
+    }
+
+}
+
+@media (max-width:900px){
+    .content{
+        flex-direction: column;
+        margin: 10px:
+    }
 }
